@@ -1,5 +1,5 @@
-package com.myclass.service;
-
-public interface EmployeeService {
-
-}
+//package com.myclass.service;
+//
+//public interface EmployeeService {
+//
+//}
