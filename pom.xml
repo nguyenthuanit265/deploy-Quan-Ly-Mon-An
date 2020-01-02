@@ -33,7 +33,13 @@
 			<version>1.2.1</version>
 		</dependency>
 		<!-- /Cloudinary heroku -->
-
+		<!-- postgresql -->
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>9.4-1201-jdbc4</version>
+		</dependency>
+		<!-- postgresql -->
 		<!-- Commons io -->
 		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
 		<dependency>
