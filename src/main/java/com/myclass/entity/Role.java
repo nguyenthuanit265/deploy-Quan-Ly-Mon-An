@@ -32,6 +32,7 @@ public class Role {
 	private List<Employee> employees;
 
 	public Role() {
+		
 	}
 
 	public Role(int id, String name, String description) {
