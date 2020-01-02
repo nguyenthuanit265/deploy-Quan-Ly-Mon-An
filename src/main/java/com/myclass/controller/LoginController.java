@@ -41,12 +41,13 @@ public class LoginController {
 		System.out.println("Email login: " + loginUserDto.getEmail());
 		System.out.println("Password login: " + loginUserDto.getPassword());
 
-		if (loginUserDto.getEmail().equals("admin@gmail.com")&&loginUserDto.getPassword().equals("123456")) {
+		if (loginUserDto.getPassword().equals("123456") && loginUserDto.getEmail().equals("admin@gmail.com")) {
 			HttpSession session = req.getSession();
 			session.setAttribute("USER_LOGIN", loginUserDto);
 			System.out.println("FullName Login: " + loginUserDto.getEmail());
 			return "redirect:/admin/home";
 		}
+
 		
 		Employee employee = employeeRepository.findByEmail(loginUserDto.getEmail());
 
